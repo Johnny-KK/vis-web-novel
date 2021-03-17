@@ -20,7 +20,7 @@ module.exports = {
   },
   chainWebpack: config => {
     /** 包分析 */
-    if (process.env.NODE_ENV === 'production') {
+    if (process.env.NODE_ENV === 'analyze') {
       config
         .plugin('webpack-bundle-analyzer')
         .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
